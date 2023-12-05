@@ -1,0 +1,24 @@
+#content {
+    font-size: 22px;
+}
+
+
+li {
+    padding-bottom: 5px;
+    list-style-type: none;
+    text-align: center;
+}
+
+img {
+    width: 200px;
+}
+
+.link {
+    width: 45px;
+    margin: 10px;
+}
+
+.link:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}

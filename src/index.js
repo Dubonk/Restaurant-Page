@@ -1,8 +1,11 @@
 import './style.css';
-import './styles/home.css'
+import './styles/home.css';
+import './styles/contact.css';
 import './scripts/home';
+import './scripts/contact';
 import githubImg from './svgs/github.svg';
-import renderHome from './scripts/home';
+import renderHome from './scripts/home.js';
+import renderContact from './scripts/contact.js'
 
 const createLinks = (function () {
     const links = document.createElement('div');
@@ -40,4 +43,4 @@ const createFooter = (function () {
     document.body.appendChild(footer);
 })();
 
-renderHome();
+renderContact();
