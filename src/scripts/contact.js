@@ -25,6 +25,21 @@ const renderContact = (function () {
     const hours = document.createElement('h3');
     hours.textContent = 'Hours';
 
+    const sun = document.createElement('div');
+    sun.textContent = 'Sunday: closed'
+    const mon = document.createElement('div');
+    mon.textContent = 'Monday: 12:00PM - 8:00PM'
+    const tue = document.createElement('div');
+    tue.textContent = 'Tuesday: 12:00PM - 8:00PM';
+    const wed = document.createElement('div');
+    wed.textContent = 'Wednesday: 12:00PM - 8:00PM';
+    const thur = document.createElement('div');
+    thur.textContent = 'Thursday: 10:00AM - 10:00PM';
+    const fri = document.createElement('div');
+    fri.textContent = 'Friday: 10:00AM - 12:00AM';
+    const sat = document.createElement('div');
+    sat.textContent = 'Saturday: 10:00AM - 12:00AM';
+
     const socials = document.createElement('div');
 
     const insta = new Image();
@@ -46,5 +61,14 @@ const renderContact = (function () {
     content.appendChild(bridge);
     content.appendChild(contactInfo);
     content.appendChild(hours);
+    content.appendChild(sun);
+    content.appendChild(mon);
+    content.appendChild(tue);
+    content.appendChild(wed);
+    content.appendChild(thur);
+    content.appendChild(fri);
+    content.appendChild(sat);
     content.appendChild(socials);
-})();
+});
+
+export { renderContact };

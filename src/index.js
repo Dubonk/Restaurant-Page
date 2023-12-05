@@ -4,19 +4,31 @@ import './styles/contact.css';
 import './scripts/home';
 import './scripts/contact';
 import githubImg from './svgs/github.svg';
-import renderHome from './scripts/home.js';
-import renderContact from './scripts/contact.js'
+import { renderHome } from './scripts/home.js';
+import { renderMenu } from './scripts/menu.js';
+import { renderContact } from './scripts/contact.js';
+
+
+
 
 const createLinks = (function () {
     const links = document.createElement('div');
     links.classList.add('links');
     const home = document.createElement('button');
+    home.setAttribute('id', 'homeBtn');
     home.innerText = 'Home';
+
+
     const menu = document.createElement('button');
+    menu.setAttribute('id', 'menuBtn');
     menu.innerText = 'Menu';
+
+
     const contact = document.createElement('button');
+    contact.setAttribute('id', 'contactBtn');
     contact.innerText = 'Contact';
     
+
     links.appendChild(home);
     links.appendChild(menu);
     links.appendChild(contact);
@@ -43,4 +55,36 @@ const createFooter = (function () {
     document.body.appendChild(footer);
 })();
 
-renderContact();
+const clearContent = (function () {
+    const content = document.getElementById('content');
+    while(content.firstChild) {
+        content.removeChild(content.lastChild);
+    }
+});
+
+const homeLink = (function () {
+    const homeBtn = document.getElementById('homeBtn');
+    homeBtn.addEventListener('click', () => {
+        clearContent();
+        renderHome();
+    });
+})();
+
+const menuLink = (function () {
+    const menuBtn = document.getElementById('menuBtn');
+    menuBtn.addEventListener('click', () => {
+        clearContent();
+        renderMenu();
+    });
+})();
+
+const contactLink = (function () {
+    const contactBtn = document.getElementById('contactBtn');
+    contactBtn.addEventListener('click', () => {
+        clearContent();
+        renderContact();
+    });
+})();
+
+
+renderHome();

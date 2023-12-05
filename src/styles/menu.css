@@ -1,0 +1,4 @@
+.menuItems {
+    transform: rotate(-90deg);
+    box-shadow: -2px -2px 10px black;
+}

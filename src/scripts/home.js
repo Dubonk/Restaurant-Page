@@ -7,6 +7,7 @@ const renderHome = (function () {
     title.innerText = "Home";
 
     const beachPic = new Image();
+    beachPic.classList.add('homePic');
     beachPic.src = beachImg;
 
 
@@ -61,4 +62,4 @@ const renderHome = (function () {
     content.appendChild(reviews);
 });
 
-export default renderHome;
+export { renderHome };
