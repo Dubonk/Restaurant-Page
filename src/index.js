@@ -4,6 +4,7 @@ import './styles/contact.css';
 import './scripts/home';
 import './scripts/contact';
 import githubImg from './svgs/github.svg';
+import backgroundImg from './images/background.JPEG';
 import { renderHome } from './scripts/home.js';
 import { renderMenu } from './scripts/menu.js';
 import { renderContact } from './scripts/contact.js';
@@ -45,6 +46,13 @@ const createTitle = (function () {
     
     document.body.prepend(title);
 })();
+
+const addBG = (function () {
+    const bgImg = new Image();
+    bgImg.src = backgroundImg;
+    
+    document.body.appendChild(bgImg);
+});
 
 const createFooter = (function () {
     const footer = document.createElement('footer');

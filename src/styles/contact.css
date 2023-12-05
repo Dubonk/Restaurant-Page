@@ -9,8 +9,6 @@ li {
     text-align: center;
 }
 
-
-
 .link {
     width: 45px;
     margin: 10px;
@@ -20,4 +18,12 @@ li {
 .link:hover {
     cursor: pointer;
     transform: scale(1.2);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
 }
