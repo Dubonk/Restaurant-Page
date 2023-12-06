@@ -26,18 +26,31 @@ const renderContact = (function () {
     hours.textContent = 'Hours';
 
     const sun = document.createElement('div');
+    sun.classList.add('schedule');
     sun.textContent = 'Sunday: closed'
+
     const mon = document.createElement('div');
+    mon.classList.add('schedule');
     mon.textContent = 'Monday: 12:00PM - 8:00PM'
+
     const tue = document.createElement('div');
     tue.textContent = 'Tuesday: 12:00PM - 8:00PM';
+    tue.classList.add('schedule');
+
     const wed = document.createElement('div');
+    wed.classList.add('schedule');
     wed.textContent = 'Wednesday: 12:00PM - 8:00PM';
+
     const thur = document.createElement('div');
+    thur.classList.add('schedule');
     thur.textContent = 'Thursday: 10:00AM - 10:00PM';
+
     const fri = document.createElement('div');
+    fri.classList.add('schedule');
     fri.textContent = 'Friday: 10:00AM - 12:00AM';
+
     const sat = document.createElement('div');
+    sat.classList.add('schedule');
     sat.textContent = 'Saturday: 10:00AM - 12:00AM';
 
     const socials = document.createElement('div');

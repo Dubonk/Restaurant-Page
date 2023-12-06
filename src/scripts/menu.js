@@ -8,6 +8,11 @@ const renderMenu = (function () {
     const title = document.createElement('h2');
     title.textContent = 'Menu';
 
+    const menuPara = document.createElement('div');
+    menuPara.classList.add('.menuPara');
+    menuPara.textContent = "Where culinary excellence meets the vibrant flavors of Mexico and the sizzle of perfectly cooked steaks. Our menu is a symphony of tantalizing options designed to elevate your dining experience:";
+
+
     const steakImg = new Image();
     steakImg.src = steak;
     steakImg.classList.add('menuItems');
@@ -22,6 +27,7 @@ const renderMenu = (function () {
 
 
     content.appendChild(title);
+    content.appendChild(menuPara);
     content.appendChild(steakImg);
     content.appendChild(taco);
     content.appendChild(quesa);

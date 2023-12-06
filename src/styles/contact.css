@@ -9,6 +9,10 @@ li {
     text-align: center;
 }
 
+.schedule {
+    margin-bottom: 10px;
+}
+
 .link {
     width: 45px;
     margin: 10px;

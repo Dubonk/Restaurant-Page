@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(./Roboto-Black.ttf) format('ttf');
+}
+
 body {
     margin: 0;
     display: flex;
@@ -7,7 +12,7 @@ body {
     height: 100vh;
     background-image: url('./images/background.JPEG');
     background-size: cover;
-    /* background: linear-gradient(to right, rgb(173, 83, 137), rgb(60, 16, 83)); */
+    font-family: 'Roboto';
 }
 
 #title {
@@ -21,13 +26,10 @@ body {
 }
 
 .links {
-    margin-top: 10px;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-top: 30px;
     width: 450px;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 5px;
 }
 
 #content {
@@ -38,7 +40,7 @@ body {
     color: white;
     border-radius: 12px;
     padding: 20px;
-    margin-top: 40px;
+    margin-top: 30px;
     text-align: center;
     width: 600px;
     height: 70%;
@@ -51,14 +53,22 @@ img {
 }
 
 button {
-    background: transparent;
+    /* background: transparent; */
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
     border: none;
+    padding: 15px 20px 15px 20px;
     font-size: 18px;
     cursor: pointer;
+    color: white;
 }
 
 button:hover {
-    color: white;
+    background-color: rgba(73, 73, 73, 0.7);
+}
+
+button:active {
+    transform: scale(0.9);
 }
 
 footer {

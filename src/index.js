@@ -47,12 +47,12 @@ const createTitle = (function () {
     document.body.prepend(title);
 })();
 
-const addBG = (function () {
-    const bgImg = new Image();
-    bgImg.src = backgroundImg;
+const addContentContainer = (function () {
+    const content = document.createElement('div');
+    content.setAttribute('id', 'content');
     
-    document.body.appendChild(bgImg);
-});
+    document.body.appendChild(content);
+})();
 
 const createFooter = (function () {
     const footer = document.createElement('footer');
