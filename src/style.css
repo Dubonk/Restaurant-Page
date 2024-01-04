@@ -43,7 +43,6 @@ body {
     margin-top: 30px;
     text-align: center;
     width: 600px;
-    height: 70%;
     box-shadow: -1px 2px 5px black;
 }
 
@@ -53,7 +52,6 @@ img {
 }
 
 button {
-    /* background: transparent; */
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 12px;
     border: none;
@@ -74,11 +72,11 @@ button:active {
 footer {
     display: flex;
     justify-content: center;
-    position: absolute;
-    bottom: 0;
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
+    position: fixed;
+    bottom: 0;
 }
 
 #githubImg {
@@ -87,4 +85,26 @@ footer {
 #githubImg:hover {
     cursor: pointer;
     transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+    .links {
+        width: 300px;
+    }
+    #content {
+        width: 300px;
+        height: fit-content;
+        margin-bottom: 25px;
+    }
+    .homePic {
+        width: 150px;
+    }
+    body {
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
+    footer {
+        position: relative;
+        bottom: auto;
+    }
 }
